@@ -5,12 +5,6 @@
   },
   "forwardPorts": [5001],
   "postCreateCommand": "bash .devcontainer/setup-environment.sh",
-  "secrets": {
-    "OPEN_AI_API_KEY": {
-      "description": "API key for OpenAI",
-      "documentationUrl": "https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key"
-    }
-  },
   "hostRequirements": {
     "memory": "16gb",
   },
