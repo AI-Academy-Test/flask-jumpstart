@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from starter.health_api import health_api
+from jumpstart.health_api import health_api
 from tests.blueprint_test_support import test_client
 
 

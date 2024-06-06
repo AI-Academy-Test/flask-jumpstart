@@ -21,7 +21,7 @@ Once your dev container is running, follow the instructions below to ensure your
 
 1.  Run the app with [flask](https://flask.palletsprojects.com).
     ```shell
-    python -m starter
+    python -m jumpstart
     ```
 
 1.  Curl the health endpoint and check that the app is healthy.

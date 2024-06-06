@@ -2,7 +2,7 @@ import logging
 
 from flask import Flask
 
-from starter.health_api import health_api
+from jumpstart.health_api import health_api
 
 logger = logging.getLogger(__name__)
 
