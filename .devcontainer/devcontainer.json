@@ -1,0 +1,14 @@
+{
+  "name": "Flask Starter",
+  "build": {
+    "dockerfile": "Dockerfile",
+  },
+  "forwardPorts": [5001],
+  "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "secrets": {
+    "OPEN_AI_API_KEY": {
+      "description": "API key for OpenAI",
+      "documentationUrl": "https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key"
+    }
+  }
+}
