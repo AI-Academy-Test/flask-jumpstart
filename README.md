@@ -12,7 +12,8 @@ Follow the instructions below to create and run the dev container on your machin
 
 ## Python application
 
-Once your dev container is running, follow the instructions below to ensure your environment is ready.
+Once your dev container is running, open a terminal in PyCharm (Alt/Option + F12) and follow the instructions below to
+ensure your environment is ready.
 
 1.  Run tests with [unittest](https://docs.python.org/3/library/unittest.html).
     ```shell
