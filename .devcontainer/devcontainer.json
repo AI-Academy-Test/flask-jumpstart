@@ -4,7 +4,7 @@
     "dockerfile": "Dockerfile",
   },
   "forwardPorts": [5001],
-  "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "postCreateCommand": "bash .devcontainer/setup-environment.sh",
   "secrets": {
     "OPEN_AI_API_KEY": {
       "description": "API key for OpenAI",
@@ -16,7 +16,9 @@
   },
   "runArgs": [
     "--mount",
-    "type=volume,target=/workspace/.idea"
+    "type=volume,target=/workspace/.idea",
+    "--mount",
+    "type=volume,target=/workspace/venv"
   ],
   "workspaceFolder": "/workspace",
 }
