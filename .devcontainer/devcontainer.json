@@ -10,5 +10,13 @@
       "description": "API key for OpenAI",
       "documentationUrl": "https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key"
     }
-  }
+  },
+  "hostRequirements": {
+    "memory": "16gb",
+  },
+  "runArgs": [
+    "--mount",
+    "type=volume,target=/workspace/.idea"
+  ],
+  "workspaceFolder": "/workspace",
 }
