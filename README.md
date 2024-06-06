@@ -4,7 +4,7 @@
 
 The _Flask Jumpstart_ app runs in a [dev container](https://containers.dev/).
 Follow [these instructions](https://www.jetbrains.com/help/pycharm/connect-to-devcontainer.html#start_container_from_product)
-to start the dev container in [PyCharm](https://www.jetbrains.com/pycharm/).
+to start the dev container in [PyCharm](https://www.jetbrains.com/pycharm/) (be sure to choose the _From VCS Project_ option).
 
 ## Jumpstart
 
