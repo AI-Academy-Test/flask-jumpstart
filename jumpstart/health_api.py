@@ -23,11 +23,11 @@ def health_api(db_template: DatabaseTemplate) -> Blueprint:
             return jsonify({
                 'status': 'UP',
                 'database': 'UP',
-            })
+            }), 200
         else:
             return jsonify({
                 'status': 'DOWN',
                 'database': 'DOWN',
-            })
+            }), 504
 
     return api

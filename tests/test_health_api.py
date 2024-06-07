@@ -29,5 +29,5 @@ class TestHealthApi(TestCase):
 
         response = client.get('/health')
 
-        self.assertEqual(200, response.status_code)
+        self.assertEqual(504, response.status_code)
         self.assertEqual({'status': 'DOWN', 'database': 'DOWN'}, response.json)

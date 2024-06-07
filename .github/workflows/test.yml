@@ -15,5 +15,4 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           runCmd: |
-            source venv/bin/activate
-            python -m unittest  
+            ./check.sh  
