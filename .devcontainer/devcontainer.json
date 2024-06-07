@@ -1,18 +1,14 @@
 {
   "name": "Flask Starter",
-  "build": {
-    "dockerfile": "Dockerfile",
-  },
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
   "forwardPorts": [5001],
   "postCreateCommand": "bash .devcontainer/setup-environment.sh",
-  "hostRequirements": {
-    "memory": "16gb",
-  },
   "runArgs": [
     "--mount",
-    "type=volume,target=/workspace/.idea",
+    "type=volume,target=${containerWorkspaceFolder}/.idea",
     "--mount",
-    "type=volume,target=/workspace/venv"
+    "type=volume,target=${containerWorkspaceFolder}/venv"
   ],
   "workspaceFolder": "/workspace",
 }
