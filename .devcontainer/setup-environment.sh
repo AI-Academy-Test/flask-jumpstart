@@ -4,4 +4,4 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-PGPASSWORD=postgres psql -h postgres postgres -U postgres < databases/create_databases.sql
+PGPASSWORD=postgres psql -h localhost postgres -U postgres < databases/create_databases.sql
