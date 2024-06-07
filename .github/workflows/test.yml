@@ -11,15 +11,8 @@ jobs:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build dev container image
+      - name: Run tests
         uses: devcontainers/ci@v0.3
         with:
-          imageName: ghcr.io/initialcapacity/flask-jumpstart
-          cacheFrom: ghcr.io/initialcapacity/flask-jumpstart
-          push: always
-      - name: Build and run Dev Container task
-        uses: devcontainers/ci@v0.3
-        with:
-          cacheFrom: ghcr.io/initialcapacity/flask-jumpstart
           runCmd: |
             python -m unittest  
