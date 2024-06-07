@@ -3,7 +3,7 @@
   "dockerComposeFile": "docker-compose.yml",
   "service": "app",
   "forwardPorts": [5001, 5432],
-  "postCreateCommand": "bash .devcontainer/setup-environment.sh",
+  "postCreateCommand": "bash .devcontainer/set-up-environment.sh",
   "runArgs": [
     "--mount",
     "type=volume,target=${containerWorkspaceFolder}/.idea",
